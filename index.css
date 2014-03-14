@@ -1,0 +1,128 @@
+body {
+	color:#555;
+	background: #F8F8F8;
+    margin: 0;
+    padding: 0;
+}
+
+/* 顶部工具栏 */
+#toolbar {
+    height: 20px;
+    background: #ddd;
+    -webkit-app-region: drag;
+}
+
+#toolbar, #close {
+    cursor: pointer;
+}
+
+#container {
+	width:400px;
+	margin: 0 auto;
+}
+
+/* 头部 */
+#container header {
+	color:#999;
+	text-align: center;
+	margin: 0 auto;
+	padding: 10px 0;
+	border-bottom: 1px solid #ddd;
+}
+
+#container header img {
+	width:40px;
+	height:40px;
+	border-radius: 5px;
+	border:1px solid #ccc;
+	vertical-align:middle;
+	margin: 0 10px 0 0;
+}
+
+/* 聊天框 */
+#chat-list {
+	max-height:270px;
+	margin: 20px 0;
+	padding: 0 10px;	
+	overflow: hidden;
+	overflow-y: auto;
+}
+
+.msg {
+	max-width: 70%;
+	font-size:13px;
+	letter-spacing: 1px;
+	border-radius: 5px;
+	margin: 10px 0;
+	padding: 8px 5px;
+	position: relative;
+	clear: both;
+}
+
+/* 接收的信息 */
+.msg.left {
+	color:#fff;
+	float: left;
+	background:#349b63;
+}
+
+.msg.left .trigon {
+  bottom:5px;
+  left: -15px;
+  border-color:transparent #349b63 transparent transparent;
+}
+
+/* 我发的信息 */
+.msg.right {
+	float: right;
+	background:#ddd;
+}
+
+.msg.right .trigon {
+  bottom:5px;
+  right: -15px;
+  border-color:transparent transparent transparent #ddd;
+}
+
+/* 尾部 */
+#container footer {
+	padding: 5px 0;
+	text-align: center;
+	border-radius: 5px;
+	background: #ddd;
+}
+
+#container footer input {
+	width:75%;
+	border-radius: 3px;
+	border:1px solid #ddd;
+	padding: 5px 10px;
+}
+
+#container footer button {
+	color: #fff;
+	padding: 5px 10px;
+	border:none;
+	border-radius: 3px;
+	background: #777;
+	cursor: pointer;
+}
+
+#container footer button:active {
+	opacity: 0.8;
+}
+
+/* 三角形 */
+.trigon {
+  width:0;
+  height:0;
+  border-width:10px;
+  border-style:solid;
+  position: absolute;
+  z-index:-1;
+}
+
+/* ���������� */
+::-webkit-scrollbar { width: 4px;}
+::-webkit-scrollbar-track { background: rgba(0,0,0,0);}
+::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.5); border-radius: 2px;}
